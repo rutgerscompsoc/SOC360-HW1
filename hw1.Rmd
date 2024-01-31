@@ -33,7 +33,6 @@ This assignment will focus on the skills you have been developing in R over the 
 
 Submission instructions are included at the end of this document.
 
-
 ## Using RMarkdown
 This RMarkdown document contains a mixture of text (formatted using Markdown conventions) and R code "chunks". Each chunk contains a set of braces with some important information. For example, the chunk below is prefaced with ``{r preliminaries, include=FALSE}``. First, the ``r`` signifies that the chunk should be run using R. Second, ``preliminaries`` is the name of the chunk. This is followed by a set of options, separated by commas. In this case ``include=FALSE`` means that this code chunk will not be shown in any output. If we set it to ``TRUE`` then the chunk would be printed in any output.
 
@@ -140,7 +139,7 @@ v <- unlist(fruit.count)
 # Your code here
 ```
 
-Q10. In the following chunk we use a for-loop and an if-else statement to sort letters into vowels and consonants. `LETTERS` is a vector containing the capitalized Latin alphabet. Complete the missing code between the parentheses. The code should loop over each letter and check whether it is a vowel or a consonant. If it is a vowel it should be appended to the vowels vector, otherwise it should be appended to the consonants vector. You may need to use the help function (``?append``) to see how the append function works. 
+Q10. In the following chunk we use a for-loop and an if-else statement to sort letters into vowels and consonants. `LETTERS` is a vector containing the capitalized Latin alphabet. Complete the missing code between the parentheses. The code should loop over each letter and check whether it is a vowel or a consonant. If it is a vowel it should be appended to the vowels vector, otherwise it should be appended to the consonants vector. You may need to use the help function (``?append``) to see how the append function works. Hint: The command `%in%` may be helpful for completing the conditionals.
 
 ```{r q10, echo=TRUE, tidy=TRUE}
 letters <- LETTERS
