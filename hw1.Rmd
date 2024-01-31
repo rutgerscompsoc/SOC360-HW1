@@ -7,8 +7,8 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-# This cell is used to set some options for how the output should be rendered.
 # DO NOT EDIT
+# This cell is used to set some options for how the output should be rendered.
 
 # The following lines define how the output of code chunks should behave
 knitr::opts_chunk$set(echo = TRUE)
@@ -27,7 +27,9 @@ set.seed(08901) # Setting seed for random number generator
 You should be viewing this document in RStudio. If you have not done so already, make sure to install ``rmarkdown`` and ``knitr``. You can do this by clicking the Install button in the Packages tab in the lower-right corner of RStudio and following the directions on the installation menu. You can also install packages by entering ``install.packages(x)`` into the R Console, where ``x`` is the name of the package.
 
 ## Instructions
-This assignment will focus on the skills you have been developing in R over the first couple of weeks of this class. It will focus on the materials on data structures and the fundamentals of programming in R. Tabular data will be covered more thoroughly on the next homework. The assignment is also designed to help to build familiarity with RStudio, RMarkdown, and Github. It will involve a combination of short written answers and coding in R.
+This assignment will focus on the skills you have been developing in R over the first few weeks of this class. It will focus on the materials on data structures and the fundamentals of programming in R. Tabular data will be covered more thoroughly on the next homework. The assignment is also designed to help to build familiarity with RStudio, RMarkdown, and Github. It will involve a combination of short written answers and coding in R.
+
+Please review the AI assistance policy on the syllabus before proceeding. As discussed in class, it is a violation of academic integrity to try to solve the homework problems using ChatGPT or related tools. You are also forbidden from using Copilot in RStudio.
 
 **Please begin by adding your name to the top of the document on line 3.** 
 
@@ -69,46 +71,49 @@ Q3. In the chunk below, create a vector of numbers from 1 to 100 and assign it t
 Q4. Complete the code chunk below. Assign the first and last elements of the vector created in Q3 to the relevant names then print each object out using the ``print`` function.
 
 ```{r q4, echo=TRUE, tidy=TRUE}
-# first <- 
-# last <- 
-# print(first)
-# print(last)
+first <-
+last <-
+print(first)
+print(last)
 ```
 
-Q5. a. Create a vector ``v`` of 10,000 values drawn from a normal distribution then calculate the mean and standard deviation using built-in functions. Then uncomment the last two line. These lines will print the values, rounded to two decimal places.
+Q5. a. Create a vector ``v`` of 10,000 values drawn from a normal distribution then calculate the mean and standard deviation using built-in functions. Then execute the last two line. These lines will print the values, rounded to two decimal places.
 ```{r q5a, echo=TRUE, tidy=TRUE}
-# v <- 
-# v.mean <-
-# v.sd <- 
-# print(round(v.mean), 2)
-# print(round(v.sd), 2)
+v <-
+v.mean <-
+v.sd <-
+print(round(v.mean), 2)
+print(round(v.sd), 2)
 ```
 
 Q5. b. Now create a new vector ``v.2`` of the same length as ``v``, where the mean and standard deviation are equal to 10. You may need to refer to the documentation for `rnorm` to do this. Recall that you can search for functions using the `Help` tab to the right or by entering `?X` into the console, where `X` is the function name.
 ```{r q5b, echo=TRUE, tidy=TRUE}
-# v.2 <- 
-# v.2.mean <-
-# v.2.sd <- 
-# print(round(v.2.mean), 2)
-# print(round(v.2.sd), 2)
+v.2 <-
+v.2.mean <-
+v.2.sd <-
+print(round(v.2.mean), 2)
+print(round(v.2.sd), 2)
 ```
 
 Q6. Bind the two vectors from Q4 and Q5 together into a matrix with 10,000 rows and 2 columns. Print the first ten rows of the matrix using the ``head`` function.
 ```{r q6, echo=TRUE, tidy=TRUE}
 #
+
 ```
 
 Q7. a. Convert the matrix from Q6 into a data frame. Use the ``colnames`` function to assign the names ``x`` and ``y`` to the columns. 
 ```{r q7a, echo=TRUE, tidy=TRUE}
 #
+
 ```
 
 Q7. b. Next, use the ``$`` operator to select column ``y``. Print the twenty highest values from this column.
 ```{r q7b, echo=TRUE, tidy=TRUE}
 #
+
 ```
 
-Q8. This question will focus on lists. In the example below we have conducted a series of tosses of a fair coin and stored the results and other relevant information in a list called `q`. *Do not modify the first two lines and do not use the parameter ``t`` in any of your code.* Write code to complete the following:
+Q8. This question will focus on lists. In the example below we have conducted a series of tosses of a fair coin and stored the results and other relevant information in a list called `q`. Do not modify the first two lines and do not use the parameter ``t`` in any of your code. Write code to complete the following:
 
 a. Print out the last ten elements of the ``trials`` element of ``q`` using only the square brackets notation for list indexing.
 
@@ -122,9 +127,13 @@ t <- rbinom(10000,1,0.50) # DO NOT MODIFY
 q <- list(trials = t, desc="10k_trials", timestamp = date(), stats = c(mean(t), var(t))) # DO NOT MODIFY
 # Your code here
 # a
+
 # b
+
 # c
+
 # d
+
 ```
 
 
@@ -137,33 +146,35 @@ b. You will notice that this vector contains names, corresponding to the origina
 fruit.count <- list(fruits=c("apple", "orange", "pineapple", "kiwi"), counts=c(9, 4, 3, 12))
 v <- unlist(fruit.count)
 # Your code here
+
 ```
 
 Q10. In the following chunk we use a for-loop and an if-else statement to sort letters into vowels and consonants. `LETTERS` is a vector containing the capitalized Latin alphabet. Complete the missing code between the parentheses. The code should loop over each letter and check whether it is a vowel or a consonant. If it is a vowel it should be appended to the vowels vector, otherwise it should be appended to the consonants vector. You may need to use the help function (``?append``) to see how the append function works. Hint: The command `%in%` may be helpful for completing the conditionals.
 
 ```{r q10, echo=TRUE, tidy=TRUE}
-letters <- LETTERS
-vowels <- character()
-consonants <- character()
+letters <- LETTERS # A vector of letters
+vowels <- character() # A vector to store vowels
+consonants <- character() # A vector to store consonants
 
 for () { # Complete the loop statement
     if () { # Complete the conditional in parentheses
-        vowels <- append() # Complete append function
+        vowels <- append() # Add arguments to append function
     } else {
-        consonants <- append() # Complete append function
+        consonants <- append() # Add arguments append function
     }
 }
 ```
 
-Q11. Write a function that takes two inputs, a number $x$ and an exponent $n$. The function should be called `exponentiate`. For example, if `x = 4` and `n = 3` the function should return `64`. When you have written the function, uncomment the final line to test that it works as expected.
+Q11. Write a function that takes two inputs, a number $x$ and an exponent $n$. The function should be called `exponentiate`. For example, if `x = 4` and `n = 3` the function should return `64`. When you have written the function, run the final line to test that it works as expected.
 ```{r q11, echo=TRUE, tidy=TRUE}
 # Your code here
-# exponentiate(4, power = 3)
+
+exponentiate(4, power = 3)
 ```
 
-Q12. Use the pipe operator (``%>%``) to re-write this nested set of functions. Note that you may need to supply arguments to some of the functions used in the pipe. You may also need to look up how to do some of the mathematical options using `magrittr`. Verify that the results are identical.
+Q12. Use the pipe operator (``%>%`` or ``|>``) to re-write this nested set of functions. Note that you may need to supply arguments to some of the functions used in the pipe. You may also need to look up how to do some of the mathematical options using `magrittr`. Verify that the results are identical.
 
-```{r q13, echo=TRUE, tidy=TRUE}
+```{r q12, echo=TRUE, tidy=TRUE}
 N <- 10000
 X <- rnorm(N)
 
