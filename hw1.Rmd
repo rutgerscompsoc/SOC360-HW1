@@ -177,13 +177,19 @@ You have reached the end of the assignment. Please read the submission instructi
 # Submission instructions
 Once you have finished the assignment please complete the following steps to submit it:
 
-1. Click on the ``Knit`` menu at the top of the screen and select ``Knit to HTML``. Assuming there are no errors, this will render the RMarkdown document in HTML. Verify that this document contains all of your answers.
-2. Add *both* this document and the HTML file to Github. Use ``Homework submitted`` as your main commit message.
-3. Push the commit to Github.
-4. Visit your Github repository in your browser and verify that the final version of both files has been correctly uploaded.
+
+1. Click on the arrow next to ``Knit`` menu at the top of the screen and select ``Knit to HTML``. Assuming there are no errors in your code, this will render the RMarkdown document in HTML. Verify that this document contains all of your answers.
+
+*Note: ``Knit`` will produce an error if you have any ``install.packages()`` calls in this document. If this happens, remove the calls. You only need to install packages once. Please also avoid printing out unnecessary information in your answers.*
+
+2. When you are satisfied with the results, go to the top right Git panel in RStudio, check the boxes on the left next to the two files. 
+3. Click the `Commit` button. This will open up a new window.
+4. Write a message in the ``Commit message`` box then click `Commit`. If it is your final submission, the message should read "Homework submitted". Accept the pop-up that will appear and close the window.
+5. Finally, click the green arrow at the top of the Git tab to "push" your changes to Github. If asked for your username and password, close the window and complete the steps here then attempt it again: https://happygitwithr.com/https-pat.html#tldr
+6. Visit your Github repository in your browser and verify that the final version of both files has been correctly uploaded.
 
 You may commit changes as many times as you need until the deadline. I encourage you to do a test commit before you commit the final version of the homework.
 
-*Note: ``Knit`` will produce an error if you have any ``install.packages()`` calls in this document. If this happens, remove the calls. You only need to install packages once. Please also avoid printing out unnecessary information in your answers.*
+
 
 
